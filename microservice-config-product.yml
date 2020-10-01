@@ -34,6 +34,8 @@ eureka:
   instance:
     instanceId: ${spring.application.name}:${server.port}
     prefer-ip-address: true 
+emp:
+  name: zhangsan 
 ---
 server:
   port: 8001
@@ -43,8 +45,7 @@ mybatis:
   mapper-locations: classpath:mybatis/mapper/**/*.xml
 spring:
   profiles: prod # 生产环境
-emp:
-  name: zhangsan
+
   application:
     name: microservice-product-config_bus				# ******服务名*******
   datasource:
