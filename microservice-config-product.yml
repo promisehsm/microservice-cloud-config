@@ -43,6 +43,8 @@ mybatis:
   mapper-locations: classpath:mybatis/mapper/**/*.xml
 spring:
   profiles: prod # 生产环境
+emp:
+  name: zhangsan
   application:
     name: microservice-product-config_bus				# ******服务名*******
   datasource:
@@ -56,8 +58,7 @@ spring:
       initial-size: 5
       max-total: 5
       max-wait-millis: 150
-emp:
-  name: zhangsan
+
 eureka:
   client:
     registerWithEureka: true
